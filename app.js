@@ -15,4 +15,8 @@ app.use(fileUpload({
 }));
 
 app.use(cors());
+
+app.get('/', (req, res) => {
+    res.semd("Server is working");
+})
 app.use("/api/v1", User);
